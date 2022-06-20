@@ -6,7 +6,9 @@ To set the Internet Explorer version that the WebBrowser control uses, I had to 
 
 Otherwise, the WebBrowser control uses an outdated IE version that does not render pages properly.
 
-In the Registry Editor app, I opened the registry key location HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION.
+In the Registry Editor app, I opened the registry key location 
+
+	HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION.
 
 I then added my application name "Sunrise.exe" as a DWORD (32-bit) value. I set the value to 11000 to signify IE version 11.
 
